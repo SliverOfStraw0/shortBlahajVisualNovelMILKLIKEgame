@@ -24,7 +24,7 @@ position = Vector2(108, 870)
 scale = Vector2(1.38247, 1.38247)
 texture = ExtResource("1_r7sle")
 
-[node name="debug" type="Sprite2D" parent="background/bg"]
+[node name="debug center point i nbg" type="Sprite2D" parent="background/bg"]
 visible = false
 scale = Vector2(0.390205, 0.390205)
 texture = ExtResource("4_rgr1q")
