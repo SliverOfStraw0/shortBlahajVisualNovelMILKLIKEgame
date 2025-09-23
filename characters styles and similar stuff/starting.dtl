@@ -1,0 +1,15 @@
+[background arg="res://images/abcdwrtyhujreyr.png" fade="1.0"]
+[wait time="1.0"]
+narrator: you walk to your bed
+[background arg="res://images/Photokako-pointillism-GnbZAGdEmtnQkWUC.jpg" fade="0.0"]
+narrator: you look up to your bed and notice a blahaj
+you: huh why is there a blahaj on my bed?
+you: I remember seeing this in the ads
+you: since its here im not gonna complain
+[background arg="res://images/Photokako-pointillism-xToWBUHbcDH2Fau2.jpg" fade="0.0"]
+you: It is here and does look cute
+you: what should I do with it?
+[save slot="autosaveTest01"]
+- abcd
+- abcde
+- fg

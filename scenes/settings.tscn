@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://h367a1nm8o6p"]
+
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_13fv5"]
+
+[node name="settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_13fv5")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "nothing here yet"
+
+[node name="go back" type="Button" parent="."]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 68.0
+offset_bottom = 95.0
+text = "go back"
+
+[connection signal="pressed" from="go back" to="." method="_on_go_back_pressed"]

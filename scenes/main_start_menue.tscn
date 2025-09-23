@@ -1,0 +1,158 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh7styk52g03y"]
+
+[ext_resource type="Script" path="res://scripts/main_start_menue.gd" id="1_mtdlc"]
+[ext_resource type="Texture2D" uid="uid://7uv2oxdhotra" path="res://images/Photokako-pointillism-368pZ14vGY82d3XW.jpg" id="1_r7sle"]
+[ext_resource type="Texture2D" uid="uid://btq6808xln50b" path="res://images/Photokako-polaroid-JqjzXccHkOLYumQq_optimized.png" id="2_68rwu"]
+[ext_resource type="Texture2D" uid="uid://c5afo76go41rp" path="res://icon.svg" id="4_rgr1q"]
+
+[node name="main start menue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mtdlc")
+
+[node name="background" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bg" type="Sprite2D" parent="background"]
+position = Vector2(108, 870)
+scale = Vector2(1.38247, 1.38247)
+texture = ExtResource("1_r7sle")
+
+[node name="debug" type="Sprite2D" parent="background/bg"]
+visible = false
+scale = Vector2(0.390205, 0.390205)
+texture = ExtResource("4_rgr1q")
+
+[node name="ColorRect" type="ColorRect" parent="background"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -10.0
+offset_right = 819.0
+offset_bottom = 618.0
+color = Color(0, 0, 0, 0.529412)
+
+[node name="items" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="items"]
+layout_mode = 0
+offset_right = 804.0
+offset_bottom = 600.0
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="items/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="items/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("2_68rwu")
+stretch_mode = 5
+
+[node name="load menue" type="Button" parent="items/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "LOAD FROM SAVE"
+
+[node name="setting" type="Button" parent="items/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "SETTINGS"
+
+[node name="credits" type="Button" parent="items/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "CREDITS"
+
+[node name="load from save" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 803.0
+offset_bottom = 602.0
+
+[node name="MarginContainer" type="MarginContainer" parent="load from save"]
+layout_mode = 0
+offset_right = 804.0
+offset_bottom = 603.0
+mouse_filter = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="load from save/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Label" type="Label" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quick Options"
+horizontal_alignment = 1
+
+[node name="new game" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "new game"
+
+[node name="auto save" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "auto save"
+
+[node name="Label2" type="Label" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Custom Saves"
+horizontal_alignment = 1
+
+[node name="save1" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "save 1"
+
+[node name="save2" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "save 2"
+
+[node name="save3" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "save 3
+"
+
+[node name="save4" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "save 4
+"
+
+[node name="save5" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "save 5
+"
+
+[node name="go back to menue" type="Label" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back To Main Menue"
+horizontal_alignment = 1
+
+[node name="back to main menue" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "back"
+
+[connection signal="pressed" from="items/MarginContainer/VBoxContainer/load menue" to="." method="_on_load_menue_pressed"]
+[connection signal="pressed" from="items/MarginContainer/VBoxContainer/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/new game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/auto save" to="." method="_on_auto_save_pressed"]
+[connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/back to main menue" to="." method="_on_back_to_main_menue_pressed"]
