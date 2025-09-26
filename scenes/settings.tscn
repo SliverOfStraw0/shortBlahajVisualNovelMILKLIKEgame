@@ -15,7 +15,7 @@ script = ExtResource("1_13fv5")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "nothing here yet"
+text = "nothing here yet come back soon"
 
 [node name="go back" type="Button" parent="."]
 layout_mode = 0
