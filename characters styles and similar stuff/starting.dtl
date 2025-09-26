@@ -10,6 +10,9 @@ you: since its here im not gonna complain
 you: It is here and does look cute
 you: what should I do with it?
 [save slot="autosaveTest01"]
-- abcd
-- abcde
-- fg
+- try to throw it out
+	jump try_throw_out_blahaj/
+- hide it before Sliver sees it
+	jump hide_blahaj_from_sliver/
+- tell Sliver about it
+	jump tell_sliver_abt_blahaj/

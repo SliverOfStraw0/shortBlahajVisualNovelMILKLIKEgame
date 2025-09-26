@@ -27,7 +27,10 @@ directories/dch_directory={
 "you": "res://characters styles and similar stuff/you.dch"
 }
 directories/dtl_directory={
-"starting": "res://characters styles and similar stuff/starting.dtl"
+"hide_blahaj_from_sliver": "res://hide_blahaj_from_sliver.dtl",
+"starting": "res://characters styles and similar stuff/starting.dtl",
+"tell_sliver_abt_blahaj": "res://tell_sliver_abt_blahaj.dtl",
+"try_throw_out_blahaj": "res://try_throw_out_blahaj.dtl"
 }
 layout/style_list=["res://characters styles and similar stuff/first_style.tres"]
 layout/default_style="res://characters styles and similar stuff/first_style.tres"
