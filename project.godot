@@ -23,6 +23,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "blahaj": "res://characters styles and similar stuff/blahaj.dch",
 "narrator": "res://characters styles and similar stuff/narrator.dch",
+"sluver": "res://sluver.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch",
 "you": "res://characters styles and similar stuff/you.dch"
 }
