@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="short blahaj visual novel (MILK LIKE)"
+run/main_scene="res://scenes/main_start_menue.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+GLOBAL="*res://globalS.gd"
 
 [dialogic]
 

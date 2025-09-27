@@ -4,6 +4,7 @@ var xMin = 107
 var xMax = 693
 var yMin = -283
 var yMax = 870
+var ssaveName
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,6 +19,12 @@ func _process(delta: float) -> void:
 
 func genRandomBGXY():
 	return Vector2(randf_range(xMin,xMax),randf_range(yMin,yMax))
+	
+func chnageSceneWithSaveName(saveName):
+	$"loading screen".show()
+	ssaveName = saveName
+	$"loading screen/show laoding screen".start()
+	#go to "_on_show_laoding_screen_timeout" for the rest of the script
 
 func ignoreLoadButtons():
 	$"load from save".hide()
@@ -45,12 +52,17 @@ func _on_back_to_main_menue_pressed() -> void:
 
 
 func _on_auto_save_pressed() -> void:
-	Dialogic.Save.load("autosaveTest01")
+	chnageSceneWithSaveName("autosaveTest01")
 
 
 func _on_new_game_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	chnageSceneWithSaveName("START_NEW_GAME")
 
 
 func _on_setting_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/settings.tscn")
+
+
+func _on_show_laoding_screen_timeout() -> void: #not to show the loading screen but to start the loading of the game procces
+	GLOBAL.currentSaveFileToStartOnSceneSwich = str(ssaveName)
+	get_tree().change_scene_to_file("res://scenes/main.tscn")

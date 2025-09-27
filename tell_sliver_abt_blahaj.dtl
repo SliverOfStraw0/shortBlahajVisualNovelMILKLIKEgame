@@ -1,13 +1,16 @@
+[background arg="res://images/tell_sliver_about_it/phoGAMEto.png" fade="0.0"]
 you: hey love can you come here for a bit?
 sluver: okey honny what is it?
 [wait time="0.5"]
 you: so I know you hate blahajs
-you: I know that you think that they're just capitalistic bad but... 
+you: I know that you think that they're just capitalistic bad but...
 sluver: no!
 sluver: dont say what I think you're about to say
+[background arg="res://images/tell_sliver_about_it/Photokako-pointillism-nlTzKqrsmw6mHtug.jpg" fade="0.0"]
 you: a blahaj apeared on my bed...
-sluver: it just appeased 
+sluver: it just appeared
 sluver: sureeeeee
-sluver: I cant deal with this 
-narrator: Sliver walks out and slams the door 
+sluver: I cant deal with this
+[background arg="res://images/tell_sliver_about_it/Photokako-pointillism-DNDAwJFSg9IfJVOg.jpg" fade="0.0"]
+narrator: Sliver walks out and slams the door
 # Add an ending here or some sory befor the ending with atleast 3 more decisions.
