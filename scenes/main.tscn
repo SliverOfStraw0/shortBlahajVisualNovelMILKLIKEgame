@@ -17,6 +17,7 @@ offset_right = 800.0
 offset_bottom = 599.0
 
 [node name="Label" type="Label" parent="CenterContainer"]
+visible = false
 layout_mode = 2
 text = "blahajgames.com"
 

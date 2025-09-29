@@ -13,4 +13,12 @@ sluver: sureeeeee
 sluver: I cant deal with this
 [background arg="res://images/tell_sliver_about_it/Photokako-pointillism-DNDAwJFSg9IfJVOg.jpg" fade="0.0"]
 narrator: Sliver walks out and slams the door
-# Add an ending here or some sory befor the ending with atleast 3 more decisions.
+[save slot="autosaveTest01"]
+you: NOOO Sliver come back
+- go to your room and cry
+- start texting and calling Sliver
+- go and run after Sliver
+	narrator: you franticly put on your shoes and start running after sliver
+	narrator: you dont check both ways befor crossing the street
+	you: AHHHHHHHHHHHH
+	do GLOBAL.switchToRunOverByATruckEnding()

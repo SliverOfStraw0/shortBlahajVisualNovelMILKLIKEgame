@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdf8svp06gcnj"]
+
+[ext_resource type="PackedScene" uid="uid://bioucvyihebv5" path="res://scenes/defult.tscn" id="1_j2jje"]
+[ext_resource type="Texture2D" uid="uid://c5afo76go41rp" path="res://icon.svg" id="2_yo4cm"]
+
+[node name="ending_run_over_by_a_truck" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="defult" parent="." instance=ExtResource("1_j2jje")]
+layout_mode = 1
+backgroundTexture = ExtResource("2_yo4cm")
+smallImage = ExtResource("2_yo4cm")
+endingText = "testing testing"
+subText = "umm nithing really"

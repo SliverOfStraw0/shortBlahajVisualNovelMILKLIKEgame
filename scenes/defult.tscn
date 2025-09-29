@@ -1,0 +1,81 @@
+[gd_scene load_steps=2 format=3 uid="uid://bioucvyihebv5"]
+
+[ext_resource type="Script" path="res://scripts/defult_ending.gd" id="1_c1pbi"]
+
+[node name="defult" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c1pbi")
+
+[node name="backup if no image" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -12.0
+offset_right = 822.0
+offset_bottom = 613.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="backup if no image"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 47.0
+offset_right = 182.0
+offset_bottom = 70.0
+text = "err missing image. "
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 600.0
+
+[node name="darken" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -18.0
+offset_top = -35.0
+offset_right = 869.0
+offset_bottom = 642.0
+color = Color(0, 0, 0, 0.294118)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 601.0
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ending text" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "PLACEHOLDER TEXT"
+horizontal_alignment = 1
+
+[node name="sub text" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "placeholder but with some more words this is the words yes"
+horizontal_alignment = 1
+
+[node name="small" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="auto save" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "return to last auto save"
+
+[node name="main menue" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "return to main menue"
