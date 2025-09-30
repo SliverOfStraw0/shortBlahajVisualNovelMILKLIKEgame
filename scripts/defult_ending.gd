@@ -32,5 +32,8 @@ func _process(delta: float) -> void:
 	
 	$MarginContainer/CenterContainer/VBoxContainer/small.texture = smallImage
 	
-	
-	
+
+
+func _on_auto_save_pressed() -> void:
+	$"loading screen".show()
+	GLOBAL.chnageToMainSave("autosaveTest01")

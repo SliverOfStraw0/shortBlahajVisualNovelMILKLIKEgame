@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bioucvyihebv5"]
+[gd_scene load_steps=3 format=3 uid="uid://bioucvyihebv5"]
 
 [ext_resource type="Script" path="res://scripts/defult_ending.gd" id="1_c1pbi"]
+[ext_resource type="PackedScene" uid="uid://c27u8kxpk334x" path="res://loading screen.tscn" id="2_x28se"]
 
 [node name="defult" type="Control"]
 layout_mode = 3
@@ -79,3 +80,13 @@ text = "return to last auto save"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "return to main menue"
+
+[node name="loading screen" parent="." instance=ExtResource("2_x28se")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 864.0
+offset_bottom = 653.0
+
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/auto save" to="." method="_on_auto_save_pressed"]

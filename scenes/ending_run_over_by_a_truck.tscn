@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bdf8svp06gcnj"]
 
 [ext_resource type="PackedScene" uid="uid://bioucvyihebv5" path="res://scenes/defult.tscn" id="1_j2jje"]
-[ext_resource type="Texture2D" uid="uid://c5afo76go41rp" path="res://icon.svg" id="2_yo4cm"]
+[ext_resource type="Texture2D" uid="uid://5wa2etevedru" path="res://images/placeholders/truck placeholder.png" id="2_p5lex"]
 
 [node name="ending_run_over_by_a_truck" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ grow_vertical = 2
 
 [node name="defult" parent="." instance=ExtResource("1_j2jje")]
 layout_mode = 1
-backgroundTexture = ExtResource("2_yo4cm")
-smallImage = ExtResource("2_yo4cm")
-endingText = "testing testing"
-subText = "umm nithing really"
+backgroundTexture = ExtResource("2_p5lex")
+darken = 2.1
+endingText = "Hit by a truck ending"
+subText = "You got hit by a truck. What were you thinking DUMBO"

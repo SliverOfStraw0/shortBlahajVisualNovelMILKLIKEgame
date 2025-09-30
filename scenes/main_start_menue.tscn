@@ -80,6 +80,21 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "CREDITS"
 
+[node name="Label" type="Label" parent="items"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "*some images are placeholders
+more updates soon"
+
+[node name="Label2" type="Label" parent="items"]
+layout_mode = 0
+offset_top = 67.0
+offset_right = 243.0
+offset_bottom = 116.0
+text = "This game was made
+WITHOUT the use of GEN AI"
+
 [node name="load from save" type="Control" parent="."]
 visible = false
 anchors_preset = 0
@@ -152,7 +167,6 @@ layout_mode = 2
 text = "back"
 
 [node name="loading screen" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_left = -21.0
 offset_top = -17.0
