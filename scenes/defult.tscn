@@ -90,3 +90,4 @@ offset_right = 864.0
 offset_bottom = 653.0
 
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/auto save" to="." method="_on_auto_save_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/main menue" to="." method="_on_main_menue_pressed"]

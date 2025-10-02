@@ -37,3 +37,7 @@ func _process(delta: float) -> void:
 func _on_auto_save_pressed() -> void:
 	$"loading screen".show()
 	GLOBAL.chnageToMainSave("autosaveTest01")
+
+
+func _on_main_menue_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_start_menue.tscn")
