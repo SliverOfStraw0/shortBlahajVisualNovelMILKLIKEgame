@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://rmuppk4kcxpw"]
+
+[ext_resource type="PackedScene" uid="uid://bioucvyihebv5" path="res://scenes/defult.tscn" id="1_6dbyt"]
+
+[node name="kaboom_ending" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="defult" parent="." instance=ExtResource("1_6dbyt")]
+layout_mode = 1
+endingText = "KABOOM ending"
+subText = "you got blown up by something. You should have listend to Sliver >:( "

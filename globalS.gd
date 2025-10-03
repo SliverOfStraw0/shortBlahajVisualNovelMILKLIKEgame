@@ -12,3 +12,6 @@ func switchToRunOverByATruckEnding():
 func chnageToMainSave(saveName):
 	GLOBAL.currentSaveFileToStartOnSceneSwich = str(saveName)
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	
+func chnageToExplodedEnding():
+	get_tree().change_scene_to_file("res://scenes/kaboom_ending.tscn")
