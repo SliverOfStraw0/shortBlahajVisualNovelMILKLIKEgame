@@ -17,6 +17,36 @@ narrator: Sliver walks out and slams the door
 narrator: you follow Sliver downstairs
 you: NOOO Sliver come back
 - go to your room and cry
+	[background arg="stairs image" fade="0.0"]
+	you: ugh fuck my life
+	narrator: you walk up the stairs
+	[wait time="1.0"]
+	you: I should have never told Sliver about this 
+	[background arg="bed image" fade="0.0"]
+	narrator: you go to your bed and start crying
+	[wait time="1.0"]
+	narrator: you end up crying yourself to sleep and wake up the other day
+	[background arg="picture of the blahaj" fade="0.0"]
+	you: ugh I fucking hate this blahaj 
+	you: Im going to go and fucking throw it out 
+	[background arg="picture of puting blahaj in trashcan" fade="0.0"]
+	you: today is trash day so the garbageman should come and pick it up 
+	you: I dont want it anywere near my house
+	[background arg="walking to your house" fade="0.0"]
+	narrator: you walk up to your house
+	[background arg="image of blahaj back on staris " fade="0.0"]
+	you: WHAT THE ACTUAL FUCK 
+	you: this is not one of those movies 
+	you: this is not fucking happening 
+	you: fine it wants to be there 
+	you: leave it there !
+	[background arg="image of you home" fade="0.0"]
+	you: I have nothing better to do with my life right now 
+	you: I think Im going to cry and then go and finish on this visual novel Im making 
+	[wait time="1.0"]
+	narrator: after doing all of that you get a call from Sliver
+	- pick up the phone and cuss at her
+	- pick up and hear what she has to say
 - go and run after Sliver
 	[background arg="res://images/placeholders/Photokako-pointillism-ODSYE8P7h0lqwyln.jpg" fade="0.0"]
 	narrator: you franticly put on your shoes and start running after sliver
