@@ -14,9 +14,9 @@ sluver: I cant deal with this
 [background arg="res://images/tell_sliver_about_it/Photokako-pointillism-DNDAwJFSg9IfJVOg.jpg" fade="0.0"]
 narrator: Sliver walks out and slams the door
 [save slot="autosaveTest01"]
+narrator: you follow Sliver downstairs
 you: NOOO Sliver come back
 - go to your room and cry
-- start texting and calling Sliver
 - go and run after Sliver
 	[background arg="res://images/placeholders/Photokako-pointillism-ODSYE8P7h0lqwyln.jpg" fade="0.0"]
 	narrator: you franticly put on your shoes and start running after sliver

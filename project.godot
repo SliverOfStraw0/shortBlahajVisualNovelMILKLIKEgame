@@ -25,15 +25,16 @@ GLOBAL="*res://globalS.gd"
 directories/dch_directory={
 "blahaj": "res://characters styles and similar stuff/blahaj.dch",
 "narrator": "res://characters styles and similar stuff/narrator.dch",
-"sluver": "res://sluver.dch",
+"sluver": "res://characters styles and similar stuff/sluver.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch",
 "you": "res://characters styles and similar stuff/you.dch"
 }
 directories/dtl_directory={
+"go_and_cry_in_your_room": "res://characters styles and similar stuff/go_and_cry_in_your_room.dtl",
 "hide_blahaj_from_sliver": "res://hide_blahaj_from_sliver.dtl",
 "starting": "res://characters styles and similar stuff/starting.dtl",
-"tell_sliver_abt_blahaj": "res://tell_sliver_abt_blahaj.dtl",
-"try_throw_out_blahaj": "res://try_throw_out_blahaj.dtl"
+"tell_sliver_abt_blahaj": "res://characters styles and similar stuff/tell_sliver_abt_blahaj.dtl",
+"try_throw_out_blahaj": "res://characters styles and similar stuff/try_throw_out_blahaj.dtl"
 }
 layout/style_list=["res://characters styles and similar stuff/first_style.tres"]
 layout/default_style="res://characters styles and similar stuff/first_style.tres"
