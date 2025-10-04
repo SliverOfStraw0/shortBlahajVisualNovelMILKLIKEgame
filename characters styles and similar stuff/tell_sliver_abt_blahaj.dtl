@@ -47,7 +47,7 @@ you: NOOO Sliver come back
 	[save slot="autosaveTest01"]
 	narrator: after doing all of that you get a call from Sliver
 	- pick up the phone and cuss at her
-		[background fade="0.0"]
+		[background arg="image of phone" fade="0.0"]
 		you: WHAT ARE YOU CALLING ME FOR?
 		you: HUH? BITCH JUST TO WALK OUT LIKE THAT
 		sluver: I was gonna warn you
@@ -55,12 +55,15 @@ you: NOOO Sliver come back
 		narrator: KABOOM
 		do GLOBAL.chnageToExplodedEnding()
 	- pick up and hear what she has to say
-		[background fade="0.0"]
+		[background arg="image of phone" fade="0.0"]
 		you: hey Sliver Im so sorry for being angry with you \:<
 		sluver: shut it we dont have time 
 		you: you dont get to talk to me like that!
 		sluver: no time get in my car Its in the front 
 		you: fine
+		[wait time="1.0"]
+		[background arg="image of the inside of the car" fade="0.0"]
+		you: <Empty Text Event>
 - go and run after Sliver
 	[background arg="res://images/placeholders/Photokako-pointillism-ODSYE8P7h0lqwyln.jpg" fade="0.0"]
 	narrator: you franticly put on your shoes and start running after sliver
