@@ -15,7 +15,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	$items/version.text = GLOBAL.ver
 
 func genRandomBGXY():
 	return Vector2(randf_range(xMin,xMax),randf_range(yMin,yMax))
@@ -66,3 +66,7 @@ func _on_setting_pressed() -> void:
 func _on_show_laoding_screen_timeout() -> void: #not to show the loading screen but to start the loading of the game procces
 	GLOBAL.currentSaveFileToStartOnSceneSwich = str(ssaveName)
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
+
+
+func _on_auto_save_2_pressed() -> void:
+	chnageSceneWithSaveName($"load from save/MarginContainer/VBoxContainer/save name".text)

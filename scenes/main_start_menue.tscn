@@ -84,7 +84,7 @@ text = "CREDITS"
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "*some images are placeholders
+text = "*Some images are placeholders
 more updates soon"
 
 [node name="Label2" type="Label" parent="items"]
@@ -92,8 +92,31 @@ layout_mode = 0
 offset_top = 67.0
 offset_right = 243.0
 offset_bottom = 116.0
-text = "This game was made
+text = "*This game was made
 WITHOUT the use of GEN AI"
+
+[node name="Label3" type="Label" parent="items"]
+layout_mode = 0
+offset_top = 132.0
+offset_right = 243.0
+offset_bottom = 181.0
+text = "*Made by sliverofstraw0"
+
+[node name="Label4" type="Label" parent="items"]
+layout_mode = 0
+offset_top = 179.0
+offset_right = 243.0
+offset_bottom = 228.0
+text = "*Join the blahaj games ARG
+discord; blahajgames.com"
+
+[node name="version" type="Label" parent="items"]
+layout_mode = 0
+offset_left = 691.0
+offset_right = 800.0
+offset_bottom = 89.0
+text = "ALPHA 0.0.0.0"
+autowrap_mode = 1
 
 [node name="load from save" type="Control" parent="."]
 visible = false
@@ -134,28 +157,14 @@ layout_mode = 2
 text = "Custom Saves"
 horizontal_alignment = 1
 
-[node name="save1" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+[node name="save name" type="TextEdit" parent="load from save/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-text = "save 1"
+placeholder_text = "ENTER SAVE NAME HERE"
 
-[node name="save2" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
+[node name="auto save2" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "save 2"
-
-[node name="save3" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "save 3
-"
-
-[node name="save4" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "save 4
-"
-
-[node name="save5" type="Button" parent="load from save/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "save 5
-"
+text = "click here to load custom save (enter save name first)"
 
 [node name="go back to menue" type="Label" parent="load from save/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -201,5 +210,6 @@ one_shot = true
 [connection signal="pressed" from="items/MarginContainer/VBoxContainer/setting" to="." method="_on_setting_pressed"]
 [connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/new game" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/auto save" to="." method="_on_auto_save_pressed"]
+[connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/auto save2" to="." method="_on_auto_save_2_pressed"]
 [connection signal="pressed" from="load from save/MarginContainer/VBoxContainer/back to main menue" to="." method="_on_back_to_main_menue_pressed"]
 [connection signal="timeout" from="loading screen/show laoding screen" to="." method="_on_show_laoding_screen_timeout"]

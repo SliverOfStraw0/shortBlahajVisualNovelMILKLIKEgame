@@ -21,3 +21,8 @@ func _on_button_pressed() -> void:
 func _on_timer_timeout() -> void:
 	$Button.show()
 	$CenterContainer.hide()
+
+
+func _on_back_to_main_menue_pressed() -> void:
+	Dialogic.end_timeline()
+	get_tree().change_scene_to_file("res://scenes/main_start_menue.tscn")

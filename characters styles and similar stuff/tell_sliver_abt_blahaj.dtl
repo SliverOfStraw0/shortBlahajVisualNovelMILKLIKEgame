@@ -1,6 +1,6 @@
 [background arg="res://images/tell_sliver_about_it/phoGAMEto.png" fade="0.0"]
 you: hey love can you come here for a bit?
-sluver: okey honny what is it?
+sluver: okey honey what is it?
 [wait time="0.5"]
 you: so I know you hate blahajs
 you: I know that you think that they're just capitalistic bad but...
@@ -51,15 +51,15 @@ you: NOOO Sliver come back
 		you: WHAT ARE YOU CALLING ME FOR?
 		you: HUH? BITCH JUST TO WALK OUT LIKE THAT
 		sluver: I was gonna warn you
-		sluver:  but its to late
+		sluver: but its to late
 		narrator: KABOOM
 		do GLOBAL.chnageToExplodedEnding()
 	- pick up and hear what she has to say
 		[background arg="image of phone" fade="0.0"]
 		you: hey Sliver Im so sorry for being angry with you \:<
-		sluver: shut it we dont have time 
+		sluver: shut it we dont have time
 		you: you dont get to talk to me like that!
-		sluver: no time get in my car Its in the front 
+		sluver: no time get in my car Its in the front
 		you: fine
 		[wait time="1.0"]
 		[background arg="image of the inside of the car" fade="0.0"]

@@ -24,16 +24,41 @@ layout_mode = 2
 text = "blahajgames.com"
 
 [node name="Button" type="Button" parent="."]
-visible = false
 offset_left = 154.0
 offset_top = 206.0
 offset_right = 664.0
 offset_bottom = 237.0
-text = "looks like something went wrong. click here to go to main menue"
+text = "CLICK HERE or RESTART GAME "
+
+[node name="Label" type="Label" parent="Button"]
+layout_mode = 0
+offset_top = -28.0
+offset_right = 479.0
+offset_bottom = -5.0
+text = "looks like you typed in the wrong save, or image is not loading."
+
+[node name="Label" type="Label" parent="Button/Label"]
+layout_mode = 0
+offset_left = 418.0
+offset_top = -17.0
+offset_right = 611.0
+offset_bottom = 6.0
+rotation = -0.851879
+text = "--------------------------->>>"
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
 autostart = true
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="back to main menue" type="Button" parent="CanvasLayer"]
+offset_left = 675.0
+offset_right = 800.0
+offset_bottom = 31.0
+text = "RESTART GAME"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/back to main menue" to="." method="_on_back_to_main_menue_pressed"]
