@@ -16,4 +16,7 @@ func chnageToMainSave(saveName):
 func chnageToExplodedEnding():
 	get_tree().change_scene_to_file("res://scenes/kaboom_ending.tscn")
 	
+func getsInTheCarEnding():
+	get_tree().change_scene_to_file("res://scenes/gets_in_the_car_ending.tscn")
+	
 var ver: String = "ALPHA 0.1.0"

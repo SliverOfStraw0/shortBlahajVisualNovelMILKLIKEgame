@@ -17,7 +17,7 @@ narrator: Sliver walks out and slams the door
 narrator: you follow Sliver downstairs
 you: NOOO Sliver come back
 - go to your room and cry
-	[background arg="stairs image" fade="0.0"]
+	[background arg="res://images/tell_sliver_about_it/Photokako-pointillism-vqeIayd7r8MMpSyC.jpg" fade="0.0"]
 	you: ugh fuck my life
 	narrator: you walk up the stairs
 	[wait time="1.0"]
@@ -26,7 +26,7 @@ you: NOOO Sliver come back
 	narrator: you go to your bed and start crying
 	[wait time="1.0"]
 	narrator: you end up crying yourself to sleep and wake up the other day
-	[background arg="picture of the blahaj" fade="0.0"]
+	[background arg="res://images/tell_sliver_about_it/Photokako-pointillism-nlTzKqrsmw6mHtug.jpg" fade="0.0"]
 	you: ugh I fucking hate this blahaj
 	you: Im going to go and fucking throw it out
 	[background arg="picture of puting blahaj in trashcan" fade="0.0"]
@@ -61,9 +61,7 @@ you: NOOO Sliver come back
 		you: you dont get to talk to me like that!
 		sluver: no time get in my car Its in the front
 		you: fine
-		[wait time="1.0"]
-		[background arg="image of the inside of the car" fade="0.0"]
-		you: <Empty Text Event>
+		do GLOBAL.getsInTheCarEnding()
 - go and run after Sliver
 	[background arg="res://images/placeholders/Photokako-pointillism-ODSYE8P7h0lqwyln.jpg" fade="0.0"]
 	narrator: you franticly put on your shoes and start running after sliver

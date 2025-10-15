@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c18pek25o1tu5"]
+
+[ext_resource type="PackedScene" uid="uid://bioucvyihebv5" path="res://scenes/defult.tscn" id="1_he5lq"]
+
+[node name="defult" instance=ExtResource("1_he5lq")]
+endingText = "You get in the car"
