@@ -22,7 +22,7 @@ you: NOOO Sliver come back
 	narrator: you walk up the stairs
 	[wait time="1.0"]
 	you: I should have never told Sliver about this
-	[background arg="bed image" fade="0.0"]
+	[background arg="res://images/tell_sliver_about_it/Photokako-pointillism-iilHukRSCcRN5883.jpg" fade="0.0"]
 	narrator: you go to your bed and start crying
 	[wait time="1.0"]
 	narrator: you end up crying yourself to sleep and wake up the other day
